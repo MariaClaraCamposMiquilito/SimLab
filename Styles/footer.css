@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+.rodape /*todo conteudo do rodape*/ 
+{
+    /* background-color: #353535;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    font-family: 'Actor', sans-serif;
+    border-top: solid 1px #585858;
+    border-bottom: solid 1px #585858;
+    height: 100%;
+}
+.totalrodape
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 14rem;
+    padding: 1rem;
+    margin-top: -1.5rem;
+}
+.divisao_rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+}
+.info_empresa  /*Titulos empresa e suporte*/
+{
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.info_empresa_element  /*Sublinhado dos titulos*/
+{
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: left bottom;
+    background-position-y: 1.8rem;
+    height: 3rem;
+    width: 4.5rem;
+}
+
+.info_contatos /*Elementos dos contatos*/
+{
+    display: flex;
+    gap: .5rem;
+    justify-content: baseline;
+    justify-items: baseline;
+    word-break: break-all;
+}
+.contato_premium{
+    text-decoration: none;
+    color: white;
+}
+
+.elementos /*Todos os elementos no geral*/
+{
+    display: flex;
+    justify-items: baseline;
+    align-items: baseline;
+    gap: .5rem;
+    font-size: 14px;
+}
+
+.rodape_element_info /*elementos do desenvolvidos por*/
+{
+    margin-top: 1%;
+    display: flex;
+    gap: 0.5rem;
+    font-family: 'Actor', sans-serif;
+    font-size: 12px;
+}
+.info_links_element /*Sublinhado do titulo do links uteis */
+{
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: left bottom;
+    background-position-y: 1.8rem;
+    height: 3rem;
+    width: 6rem;
+    margin-bottom: -0.5rem;
+}
+
+.elementos_suporte  /*Elementos do suporte*/
+{
+    display: flex;
+    justify-items: baseline;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.elementos_suporte:hover /*Mouse por cima dos elementos*/
+{ 
+    transition: 0.2ms;
+    opacity: 80%;
+}
+.elementos_contatos /*elementos do contato*/
+{
+    margin-top:.2rem;
+}
+.titulologo
+{
+
+    font-family: 'Lalezar', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+}
+.linhalogo
+{
+    width: 8rem;
+    border: solid .5px white;
+    margin-bottom: .5rem;
+}
+.escritalogo
+{
+    font-family: 'Lalezar', sans-serif;
+    font-size: .85rem;
+    letter-spacing: 0.05rem;
+    text-align: center;
+}
+
+.logo
+{
+    height: 5rem;
+    width: 5rem;
+    z-index: 0;
+}
+.rodape_element /*Parte dos desenvolvidos por */
+{
+    background-color: #282828;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    
+}
+@media screen and (max-width: 1210px) 
+{
+    .rodape
+    {
+        gap:10rem;
+    }
+}
+
+@media screen and (max-width: 900px) 
+{
+    .rodape
+    {
+        gap:5rem;
+    }
+}
+
+@media screen and (max-width: 750px) 
+{
+    .totalrodape
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:1rem;
+        place-items: center;
+        place-content: center;
+        
+    }
+   
+    .empresa
+    {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) 
+{
+    .totalrodape
+    {
+        grid-template-columns: repeat(1, 1fr);
+        gap:1rem;
+        place-items: center;
+        place-content: center;
+        height: 16rem;
+    }
+    .rodape
+    {
+        height: 16rem;
+    }
+    .empresa
+    {
+        display: none;
+    }
+    .contatos
+    {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        /*margin-left: 25%;*/
+        height: 5rem;
+        width: 50vw;
+        gap: 1rem;
+    }
+    .links
+    {
+        width: 50vw;
+    }
+}

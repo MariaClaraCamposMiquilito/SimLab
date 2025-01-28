@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+:root
+{
+    --branco:#fff;
+    --preto: #404040;
+    --fonte: #484848;
+    --tamanho_fonte: 16px;
+    --estilo_fonte: 'Actor', sans-serif;
+    --azul-escuro:#2813FA ;
+    --azul-claro:#288FFA;
+    --roxo: #7228f3;
+    --verde: #13E0AB;
+}
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box
+}
+body
+{
+    background-color: #404040;
+    color: #fff;
+    font-family: 'Actor', sans-serif;
+}
+
+.apresentacao
+{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    
+}
+.conteudo
+{    
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 5rem;
+    padding-bottom: 5rem;
+  
+}
+
+.titulo
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    justify-self: flex-start;
+    margin-top: 2.5rem;
+
+}
+.busca
+{
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+}
+.pesquisa
+{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.iconpesquisa
+{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: solid 2px var(--branco);
+    background-color: #404040;
+    border-right: none;
+    padding: 0.55rem;
+    height: 2.5rem;
+}
+.input
+{
+    background-color: #404040;
+    border: solid 2px var(--branco);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: 0;
+    text-indent: .2rem;
+    border-left: none;
+    color: var(--branco);
+    height: 2.5rem;
+    width: 30rem;
+    font-size: 15px;
+}
+.input::placeholder{
+    font-size: 14px;
+}
+.botao
+{
+    background-color: #404040;
+    border: none;
+    color: var(--branco);  
+    width: 5rem;
+    height: 1.5rem;
+    transform: translate(-5.3rem);
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.botao:hover
+{
+    cursor: pointer;
+    opacity: 70%;
+}
+::-webkit-input-placeholder 
+{
+    color: var(--branco);
+}
+.comparacoes
+{
+    display: flex;
+    flex-direction: row;
+    gap: 9rem;
+}
+.grafico
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 30rem;
+    margin-bottom: .5rem;
+    font-size: 18px;
+}
+.graficos
+{
+    border-radius: 10px;
+    border: solid 3px var(--verde);
+    height: 20rem;
+    width: 30rem;
+}
+::-webkit-search-cancel-button
+{
+    -webkit-appearance: none;
+}
+@media screen and (max-width:1245px) 
+{
+
+    .comparacoes
+    {
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width:1135px) 
+{
+
+    .grafico
+    {
+        width: 25rem;
+    }
+
+    .graficos
+    {
+        height: 15rem;
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width:980px) 
+{
+
+    .grafico
+    {
+        width: 20rem;
+    }
+
+    .graficos
+    {
+        height: 15rem;
+        width: 20rem;
+    }
+}
+@media screen and (max-width:810px) 
+{
+
+    .comparacoes
+    {
+        flex-direction: column;
+        width: 20rem;
+        gap: 5rem;
+    }
+    .grafico 
+    {
+        width: 30rem;
+    }
+    .graficos
+    {
+        height: 25rem;
+        width: 30rem;
+    }
+    .busca
+    {
+        width: 10rem;
+    }
+    .titulo
+    {
+        width: 15rem;
+    }
+    .pesquisa
+    {
+        width: 30rem;
+    }
+    .input::placeholder
+    {
+        /* Adiciona um gradiente para cortar o placeholder pela metade */
+        color: transparent;
+        background: linear-gradient(to right, white 52%, transparent 40%);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+@media screen and (max-width:710px) 
+{
+
+    .comparacoes
+    {
+        flex-direction: column;
+        width: 20rem;
+        gap: 5rem;
+    }
+    .grafico 
+    {
+        width: 20rem;
+    }
+    .graficos
+    {
+        height: 15rem;
+        width: 20rem;
+    }
+    .pesquisa
+    {
+        width: 20rem;
+    }
+
+}
+@media screen and (max-width:460px) 
+{
+
+    .comparacoes
+    {
+        flex-direction: column;
+        width: 15rem;
+        gap: 5rem;
+    }
+    .grafico 
+    {
+        width: 15rem;
+    }
+    .graficos
+    {
+        height: 12rem;
+        width: 14rem;
+    }
+    .pesquisa
+    {
+        width: 15rem;
+    }
+    .input::placeholder
+    {
+        color: transparent;
+        background: linear-gradient(to right, white 41%, transparent 40%);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    .botao
+    {
+        margin-left: 1rem;
+        
+    }
+
+}
+@media screen and (max-width:360px) 
+{
+    .pesquisa
+    {
+        width: 10rem;
+    }
+}
+@media screen and (max-width:330px) 
+{
+    .conteudo
+    {
+        margin-left: 2rem;
+    }
+    .grafico 
+    {
+        width: 10rem;
+    }
+    .graficos
+    {
+        height: 10rem;
+        width: 10rem;
+    }
+    .busca
+    {
+        width: 5rem;
+    }
+    .titulo
+    {
+        width: 10rem;
+    }
+    .pesquisa
+    {
+        width: 5rem;
+    }
+    .input
+    {
+        width: 8rem;
+    }
+    .input::placeholder
+    {
+        color: transparent;
+        background: linear-gradient(to right, white 32%, transparent 25%);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    .botao
+    {
+        background-color: transparent;
+    }
+    .comparacoes
+    {
+        width: 10rem;
+    }
+}

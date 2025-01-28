@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+*
+{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #404040;
+    color: #fff;
+    font-family: 'Actor', sans-serif;
+}
+:root
+{
+    --branco:#fff;
+    --preto: #404040;
+    --fonte: #484848;
+    --tamanho_fonte: 16px;
+    --estilo_fonte: 'Actor', sans-serif;
+    --azul-claro:#288FFA;
+    --roxo: #7228f3;
+    --verde: #13E0AB;
+}
+.titulo
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    color: #fff;
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
+    font-weight: bold;
+}
+.total
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conteudo
+{
+    background-color: #585858;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+    width: 33rem;
+    height: 28rem;
+    margin-bottom: 1rem;
+}
+.tituloconteudo
+{
+    font-size: 1.12rem;
+    margin-top: .8rem;
+}
+.iconfoto
+{
+    font-size: 3.8rem;
+    margin-top: .5rem;
+    border-radius: 100%;
+}
+.fotopadrao
+{
+    border: solid 4px #fff;
+}
+.inputs
+{
+    width: 30rem;
+    margin-top: 1.8rem;
+    margin-left: .5rem;
+}
+.titulosenha
+{
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+}
+.separacaoinput
+{
+    display: flex;
+    gap:2rem;
+    width: 28rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.senha
+{
+    border-radius: 7px;
+    border: solid var(--branco) 2px;
+    background-color: #585858;
+    outline: 0;
+    color: var(--branco);
+    text-indent: .3rem;
+    font-family: 'Actor', sans-serif;
+    height: 1.8rem;
+    width: 30rem;
+    font-size: .9rem;
+}
+::-webkit-input-placeholder 
+{
+    color: var(--branco);
+}
+.linha
+{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 30rem;
+    border: solid 1px #707070;
+}
+
+.botoesconta
+{
+    display: flex;
+    gap:10rem;
+    width: 24rem;
+}
+
+.buttonconta
+{
+    width: 8rem;
+    height: 2rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    background-color: #707070;
+    border: none;
+    color: var(--branco);
+    font-family: 'Actor', sans-serif;
+    font-size: 1rem;
+    z-index: 1;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonconta:hover
+{
+    cursor: pointer;
+    background-color: #808080;
+}
+.apagar
+{
+    color: red;
+}
+.buttontotal
+{
+    background-color: var(--azul-claro);
+    color: var(--branco);
+    border: none;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Actor', sans-serif;
+}
+.buttontotal:hover
+{
+    background-color: #4aa1fe;
+    cursor: pointer;
+}
+.botoes
+{
+    display: flex;
+    gap: 19rem;
+    margin-bottom: 1rem;
+    font-family: 'Actor', sans-serif;
+    z-index: 1;
+}
+.olho_center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.olho
+{
+    transform: translateX(-1.7rem);
+    font-size: 1.3rem;
+}
+.olho:hover
+{
+    cursor: pointer;
+}
+
+.diverror
+{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    gap: .3rem;
+    color: red;
+    margin-bottom: -1rem;
+}
+
+.errormsg
+{
+    color: red;
+    font-size: var(--tamanho_fonte);
+    font-family: var(--estilo_fonte);
+}
+.error_campo
+{
+    border: 2px solid red;
+}
+
+@media screen and (max-width: 540px)
+{
+    .conteudo
+    {
+        width: 20rem;
+        height: 29rem;
+        
+    }
+    .inputs
+    {
+        width: 18rem;
+        margin-top: 1.8rem;
+    }
+    .separacaoinput
+    {
+        margin-top: 1.5rem;
+        margin-left: -1.25rem;
+        width: 20rem;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .botoesconta
+    {
+        gap: 2rem;
+        width: 20rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .linha
+    {
+        width: 18rem;
+    }
+    .botoes
+    {
+        gap: 6rem;
+    }
+    .diverror
+    {
+        width: 18rem;
+    }
+    .senha
+    {
+        width: 18rem;
+    }
+}
+@media screen and (max-width: 330px)
+{
+    .conteudo
+    {
+        width: 12rem;
+        height: 36rem;
+        
+    }
+    .inputs
+    {
+        width: 10rem;
+        margin-top: 1.8rem;
+    }
+    .separacaoinput
+    {
+        margin-top: 1.5rem;
+        margin-left: -.7rem;
+        width: 12rem;
+        flex-direction: column;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .botoesconta
+    {
+        gap: 2rem;
+        width: 12rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .linha
+    {
+        width: 10rem;
+    }
+    .botoes
+    {
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        width: 12rem;
+    }
+    .buttontotal
+    {
+        width: 8rem;
+    }
+    .titulo
+    {
+        width: 12rem;
+    }
+    .diverror
+    {
+        width: 10rem;
+    }
+    .senha
+    {
+        width: 10rem;
+    }
+}

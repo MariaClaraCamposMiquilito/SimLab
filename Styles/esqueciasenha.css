@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Secular+One&display=swap');
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --branco:#fff;
+    --preto: #404040;
+    --fonte: #484848;
+    --tamanho_fonte: 16px;
+    --estilo_fonte: 'Actor', sans-serif;
+    --azul-claro:#288FFA;
+    --roxo: #7228f3;
+    --verde: #13E0AB;
+}
+body
+{
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+.apresentacao
+{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    color: var(--fonte);
+   
+}
+
+.total
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.imagem
+{
+    background-color: var(--preto);
+    height: 43rem;
+    width: 35rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+    z-index: 1;
+    margin-right: 40rem;
+
+}
+.Logo
+{
+    margin-top:2rem;
+    margin-left: 1rem;
+    height: 33rem;
+    width: 33rem;
+}
+.total1
+{
+    position: absolute; 
+    border-radius: 10px;
+    display: flex;
+    height: 43rem;
+    background-color: var(--branco);
+    width: 70rem;
+    justify-content: end;
+    align-items: center;
+    gap: 10rem;
+    box-shadow: 0px 5px 20px 10px #888;
+}
+
+.login_total
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 0;
+    width: 38rem;
+    height: 43rem;
+}
+.input_icone
+{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.icon_email
+{
+    font-size: 1.5rem;
+    height: 2.79rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem 0 0 1.5rem;
+    border: 2px solid black;
+    border-right: none;
+    padding-left: 0rem;
+}
+.icon_senha
+{
+    font-size: 1.5rem;
+    height: 2.79rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 1.5rem 0 0 1.5rem;
+    border: none;
+    border-right: none;
+    padding-left: .8rem;
+
+}
+
+.iconesenha
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 2.79rem;
+    border: solid var(--preto) 2px;
+    border-right: none;
+    border-radius: 1.5rem 0 0 1.5rem;
+    
+}
+.campo_login
+{
+    border-radius: 0 1.5rem 1.5rem 0;
+    width: 19rem;
+    border: solid black 2px;
+    color: black;
+    font-family:var(--estilo_fonte);
+    font-size: 17px;
+    border-left: none;
+    outline: none;
+    height: 2.79rem;
+    z-index: 1;
+}
+.campo_login:focus
+{
+    border: 2px solid var(--azul-claro);
+    border-left: none;
+}
+
+.input_icone:focus-within .icon_email
+{
+    border: 2px solid var(--azul-claro);
+    border-right: none;
+    color: var(--azul-claro);
+}
+.label 
+{
+    position: absolute;
+    margin-top: .75rem;
+    margin-left: -19rem;
+    pointer-events: none;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.campo_login:is(:valid, :focus) ~ .label 
+{
+    transform: translateY(-120%) scale(0.7);
+    padding-inline: 0.3rem;
+    color: var(--azul-claro);
+    background-color: #fff;
+}
+.campo_login:not(:focus) ~ .label 
+{
+    color: #484848; 
+}
+.botao_login
+{
+    padding: 0.8rem;
+    border-radius: 2rem;
+    border: none;
+    width: 9rem;
+    background-color: var(--verde);
+    font-size: 17px;
+    margin-bottom: 1rem;
+}
+.botao_login:hover
+{
+    transition: 0.5s;
+    opacity: 70%;
+    cursor: pointer;
+}
+.info_login
+{
+    margin-top: 1rem;
+}
+.campo_registro
+{
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+
+}
+.labelesqueceusenha
+{
+    margin-left: -15rem;
+}
+.labelesqueceusenha2
+{
+    margin-left: -11rem;
+}
+.Registro
+{
+    color: var(--fonte);
+    border: none;
+    font-size: var(--tamanho_fonte);
+    font-family: var(--estilo_fonte);
+    background-color: var(--branco);
+    text-decoration: none;
+    z-index: 0;
+   
+}
+.icon_senha
+{
+    font-size: 1.5rem;
+    height: 2.79rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 1.5rem 0 0 1.5rem;
+    border: none;
+    border-right: none;
+    padding-left: .8rem;
+
+}
+
+.iconesenha
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 2.79rem;
+    border: solid var(--preto) 2px;
+    border-right: none;
+    border-radius: 1.5rem 0 0 1.5rem;
+    
+}
+
+.input_icone:focus-within .eye
+{
+    color: var(--azul-claro)
+}
+
+.esqueceusenhabtn
+{
+    margin-left: 15rem;
+    transform: translateY(-16rem);
+}
+.Registro:hover
+{
+    transition: 0.5s;
+    opacity: 70%;
+    cursor: pointer;
+}
+.eyes_password
+{
+    display: flex;
+    justify-content: center;
+}
+.eye
+{
+    font-size: 1.4rem;
+    margin-right: -1rem;
+    transform: translateX(-2.7rem);
+    margin-top: 0.6rem;
+    z-index: 1;
+}
+
+.eye:hover
+{
+    cursor: pointer;
+}
+.totalverificacao
+{
+    display: flex;
+    justify-content: center;
+    align-content: baseline;
+    gap: 1rem;
+}
+.verificacao
+{
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 1.5rem;
+    text-align: center; 
+    line-height: 2;
+    outline: var(--azul-claro);
+    border: none;
+    border-bottom: solid var(--fonte) 2px;
+    color: var(--preto);
+    font-family: 'Montserrat', sans-serif;
+}
+.verificacao:focus
+{
+    border-bottom: solid var(--azul-claro) 2px;
+}
+.btnverificacao
+{
+    margin-top: 1.6rem;
+    margin-left: 7.9rem;
+}
+.input_icone:focus-within .iconesenha
+{
+    border: 2px solid var(--azul-claro);
+    border-right: none;
+    color: var(--azul-claro);
+}
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button 
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] 
+{
+    -moz-appearance: textfield;
+}
+
+.errormsg
+{
+    color: red;
+    display: flex;
+    gap: .3rem;
+    margin-bottom: 1rem;
+    font-size: var(--tamanho_fonte);
+    font-family: var(--estilo_fonte);
+}
+.error_icon
+{
+    border: 2px solid red;
+    border-right: none;
+}
+.error_campo
+{
+    border: 2px solid red;
+    border-left: none;
+}
+.corretmsg
+{
+    color: rgb(0, 203, 0);
+    display: flex;
+    gap: .3rem;
+    margin-bottom: 1rem;
+    font-size: var(--tamanho_fonte);
+    font-family: var(--estilo_fonte);
+}
+
+
+@media screen and (max-width: 1210px)
+{
+    .total1
+    {
+        width: 55rem;
+    }
+    .imagem
+    {
+        height: 43rem;
+        width: 28rem;
+        margin-right: 30rem;
+    }
+    .Logo
+    {
+        margin-top: -2.5rem;
+        margin-left: -5.2rem;
+        height: 40rem;
+        width: 40rem;
+    }
+    .login_total
+    {
+        margin-left: 6rem;
+        margin-right: -3.5rem;
+        transform: translateX(3rem);
+    }
+
+    .totalverificacao
+    {
+        margin-left: -3rem;
+    }
+    .verificacao
+    {
+        width: 2.2rem;
+    }
+    .btnverificacao
+    {
+        margin-left: 1.9rem;
+    }
+
+}
+
+@media screen and (max-width: 940px)
+{
+    .campo_login
+    {
+        width: 13rem;
+    }
+    .linha
+    {
+        width: 5.2rem;
+    }
+    .total1
+    {
+        width: 37rem;
+    }
+    .imagem
+    {
+        height: 43rem;
+        width: 18rem;
+        margin-right: 19rem;
+    }
+    .Logo
+    {
+        margin-top: 5.5rem;
+        margin-left: -2.2rem;
+        height: 25rem;
+        width: 23rem;
+    }
+
+    .login_total
+    {
+        margin-left: 0rem;
+        margin-right: -3.5rem;
+        transform: translateX(-3.5rem);
+        width: 19rem;
+    }
+
+    .label
+    {
+        margin-top: .9rem;
+        margin-left: -13rem;
+        font-size: .9rem;
+    }
+   
+    .labelesqueceusenha2
+    {
+        margin-left: -4rem;
+    }
+    .labelesqueceusenha
+    {
+        margin-left: -10rem;
+    }
+
+    .totalverificacao
+    {
+        margin-left: -1rem;
+    }
+    .verificacao
+    {
+        width: 1.5rem;
+    }
+    .btnverificacao
+    {
+        margin-left: 1.9rem;
+    }
+    .icon_senha
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:none;
+        width: 3rem;
+        height: 1.5rem;
+    }
+
+    .iconesenha
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        height: 2.79rem;
+        border-radius: 1.5rem 0 0 1.5rem;
+        
+    }
+
+}
+    
+
+@media screen and (max-width: 600px)
+{
+    body
+    {
+        background-color: var(--preto);
+    }
+    .apresentacao
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 11vw;
+    }
+    .total1
+    {
+        flex-direction: column;
+        margin-top: -5rem;
+        box-shadow: none;
+        background-color: var(--preto);
+        color: var(--branco);
+        width: 1rem;
+        
+    }
+    .imagem
+    {
+        width: 5rem;
+        margin-left: -10.6rem;
+        margin-top: -48.1rem;
+        border-radius: 10px 10px 0 0;
+        transform: translateX(13.3rem);
+        height: 2rem;
+
+    }
+    .Logo
+    {
+        height: 8rem;
+        width: 8rem;
+    }
+    .campo_login
+    {
+        background-color: var(--preto);
+        border: solid var(--branco) 2px;
+        border-left: none;
+        color: var(--branco);
+        width: 12rem;
+        
+    }
+    .label
+    {
+        color: var(--branco);
+    }
+    .campo_login:is(:valid, :focus) ~ .label 
+    {
+        transform: translateY(-135%) scale(0.7);
+        padding-inline: 0.3rem;
+        color: var(--azul-claro);
+        background-color: var(--preto);
+    }
+    .campo_login:not(:focus) ~ .label 
+    {
+        color: var(--branco); 
+    }
+    .conteudo_login
+    {
+        margin-bottom: -.3rem;
+    }
+    .icon_email
+    {
+        border: solid var(--branco) 2px;
+        border-right: none;
+    }
+    .icon_senha
+    {
+        border: solid var(--branco) 2px;
+        border-right: none;
+    }
+    
+    .Registro
+    {
+        background-color: transparent;
+        color: var(--branco);
+    }
+    .label
+    {
+        font-size: .8rem;
+        margin-left: -12rem;
+    }
+    .labelesqueceusenha
+    {
+        margin-left: -8rem;
+    }
+    .labelesqueceusenha2
+    {
+        margin-left: -4.5rem;
+    }
+    
+    .totalverificacao
+    {
+        margin-top: -4rem;
+        margin-left: 0rem;
+    }
+    .btnverificacao
+    {
+        margin-left: 2.3rem;
+    }
+    .verificacao
+    {
+        background-color: var(--preto);
+        color: var(--branco);
+        border-bottom: solid 2px var(--branco);
+    }
+    .icon_senha
+    {
+        border: solid var(--branco) 2px;
+        border-right: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border:none;
+        width: 3rem;
+        height: 1.5rem;
+    }
+
+    .iconesenha
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        height: 2.79rem;
+        border: solid var(--branco) 2px;
+        border-right: none;
+        border-radius: 1.5rem 0 0 1.5rem;
+        
+    }
+}

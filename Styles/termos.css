@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+* 
+{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #404040;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.go_back{
+    padding: 2rem 5rem;
+    font-size: 1.5rem;
+    color:white;
+    font-weight: bold;
+}
+.go_back i{
+    transition: 0.3s;
+}
+.go_back i:hover{
+    color: #7c7c7c;
+}
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 100%;
+    padding: 0rem 15rem;
+    justify-content: space-between;
+    border-bottom: solid #585858 1px;
+    margin-top: -5.5rem;
+}
+.campo_imagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.simlab{
+    font-size: 2.3rem;
+    font-family: 'Lalezar', sans-serif;
+    margin-top: -1rem;
+}
+
+.botao_direcionamento{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.6rem;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 0.5rem;
+    border: solid 3px #7c7c7c;
+    border-radius: 0.6rem;
+    transition: 0.3s;
+    font-size: 1.1rem;
+}
+.botao_direcionamento:hover{
+    background-color: #585858;
+}
+.botao_direcionamento i{
+    font-size: 1.75rem;
+    color: white;
+}
+.conteudo_total{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.apresentacao{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #585858;
+}
+.titulo_cabecalho{
+    padding: 1rem;
+}
+.lista{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    gap: 1.5rem;
+}
+.item_lista{
+    font-weight: bold;
+}
+.texto_lista{
+    font-weight: none;
+    text-align: justify;
+}
+.sublista{
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    gap: 0.5rem; 
+    text-align: justify;
+
+}
+

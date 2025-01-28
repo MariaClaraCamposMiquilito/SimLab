@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho_total {
+    border-bottom: solid #585858 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #404040;
+    height: 3rem;
+    width: 100%;
+    color:#fff;
+}
+
+.total2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 3rem;
+    background-color: #404040; 
+    border-bottom: solid #585858 1px;
+}
+
+.campo_imagem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.imunosim {
+    font-family: 'Lalezar', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.3rem;
+}
+
+.navegar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.lista_header {
+    list-style-type: none;
+    color: #a7a7a7;
+}
+
+.direcionamento_cabecalho {
+    display: flex;
+    gap: 2.5rem;
+    width: 100%;
+}
+
+.direcionamento {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+.direcionamento_hover:hover {
+    border-bottom: solid 1px #289FFA;
+    color:#289FFA;
+}
+
+.item_header_drop {
+    position: relative;
+}
+
+.drop {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: #484848;
+    height: 0; 
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.item_header_drop:hover .drop {
+    height: 6.75rem;
+    border-top: solid 1px #289FFA;
+}
+
+.item_drop {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: .625rem;
+    z-index: 100;
+}
+
+.item_drop:hover {
+    color: #e4e1e1;
+}
+
+.perfil_botao {
+    background-color: #289FFA;
+    border-radius: 100%;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.4rem;
+    height: 2.3rem;
+    transition: .5s;
+    color: #fff;
+    border-radius: 100%;
+    
+}
+
+.icon
+{
+    border-radius: 100%;
+}
+
+.perfil_botao i {
+    font-size: 1.4rem;
+}
+
+.perfil_botao:hover {
+    background-color: #5bb1f4;
+    cursor: pointer;
+}
+
+.centerperfil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(5rem);
+}
+
+.nomeusuario {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.emailusuario {
+    font-size: 13px;
+}
+
+.containfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 3rem;
+}
+
+.conta {
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #fff;
+    border: solid #585858 1px;
+}
+
+.item_conta {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.escondido {
+    opacity: 0%;
+    pointer-events: none;
+}
+
+.opcoesconta {
+    width: 16rem;
+    transform: translateY(3.948rem);
+    background-color: #404040;
+    transition: .3s;
+    color: #fff;
+    z-index: 20;
+}
+
+.sair 
+{
+    color: red;
+    background-color: #404040;
+    border: none;
+    height: 2.5rem;
+    width: 100%;
+}
+.sair:hover
+{
+    cursor: pointer;
+}
+
+.item_conta:hover {
+    background-color: #585858;
+}
+
+.btnperfil {
+    transform: translateX(3.6rem);
+    margin-top: -.1rem;
+}
+
+@media screen and (max-width: 986px) 
+{
+    .cabecalho_total
+    {
+        width: 100%;
+        border: none;
+    }
+    .total2 
+    {
+        display: grid;
+        grid-template-columns: 100% 100%;
+        place-content: start;
+        place-items: start;
+        width: 100%;
+        background-color: #404040;
+        height: 2.7rem;
+        gap:0;
+    }
+    .centerperfil
+    {
+        transform: translateX(0);
+    }
+
+    .navegar 
+    {
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        z-index: 1;
+        background-color: #404040;
+        width: 100%;
+        flex-direction: column;
+        height: 8rem;
+        padding-top: .5rem;
+        margin-top: -1.5rem;
+    }
+
+    .direcionamento_cabecalho {
+        display: flex;
+        flex-direction: column;
+        background-color: #404040;
+        width: 100vw;
+        align-items: center;
+
+    }
+
+    .item_header
+    {
+        width: 100vw;
+        border-bottom: 1px solid #575757;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: -.7rem;
+    }
+    .quemsomos
+    {
+        margin-top: -1rem;
+        padding-bottom: 1rem;
+    }
+    .home
+    {
+        padding-top: .2rem;
+        padding-bottom: .7rem;
+    }
+    .sobreprojeto
+    {
+        margin-top: -1.5rem;
+    }
+
+    .campo_imagem {
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 2rem;
+        transform: translateY(-2rem);
+        margin-left: 10vw;
+        display: flex;
+        align-items: center;
+    }
+
+    .centerperfil {
+        grid-column: 1;
+        grid-row: 4;
+        z-index: 1; 
+    }
+
+    .hamburguer 
+    {
+        grid-column:2;
+        grid-row: 1;
+        width: 2rem;
+        height: 2rem;
+        border: solid 1px #575757;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: .3rem;
+        background-color: #404040;
+        margin-top: .3rem;
+        margin-left: -20vw;
+    }
+
+    .lines {
+        width: 1rem;
+        border: 1px solid #fff;
+    }
+
+    .hamburguer:hover {
+        cursor: pointer;
+        background-color: #575757;
+    }
+    .direcionamento_hover:hover
+    {
+        border:none;
+        color: #289FFA;
+    }
+    .item_header_drop:hover .drop {
+        border: none;
+    }
+    .item_header_drop:hover
+    {
+        border: none;
+        cursor: pointer;
+    }
+
+    .centerperfil
+    {
+        height: 8rem;
+        width: 100vw;
+        margin-top: -.0382rem;
+        z-index: 0;
+        border-top: #585858 1px solid;
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        background-color: #404040;
+    }
+    .opcoesconta
+    {
+        opacity: 100%;
+        pointer-events: all;
+    }
+    .perfil_botao
+    {
+        display: none;
+    }
+    .containfo
+    {
+        display: none;
+    }
+    .conta
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: none;
+        margin-top: -4rem;
+        border: none;
+
+        width: 100vw;
+    }
+    .item_conta:hover
+    {
+        background-color: #404040;
+        cursor: pointer;
+        color: #289FFA;
+    }
+    .item_conta
+    {
+        border-bottom: solid 1px #585858;
+        width: 100vw;
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .cabecalho_total {
+        column-gap: 40vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cabecalho_total {
+        column-gap: 30vw;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .cabecalho_total {
+        column-gap: 15vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .cabecalho_total {
+        column-gap: 10vw;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .hamburguer {
+        margin-left: -5rem;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .hamburguer {
+        margin-left: -5rem;
+    }
+}
+
+@media screen and (max-width: 260px) {
+    .hamburguer {
+        margin-left: -2rem;
+    }
+}
+

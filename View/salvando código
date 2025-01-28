@@ -1,0 +1,373 @@
+*
+{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+    
+}
+.total{
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 0 0 #13E0AB;
+    transition: .45s;
+    
+}
+.btn_expandir{ 
+    margin-top: 0.7rem;
+}
+.btn_expandir > i{
+    color: #fff;
+    font-size: 30px;
+    margin-left: 18px;
+}
+.lista{
+    list-style-type: none;
+}
+.campo_lista{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    transition: .5s;
+}
+.campo_item_lista{
+    width: 16rem;
+    justify-content: center;
+    align-items: center;
+}
+.item_menu{
+    width: 16rem;
+    transition: .5s;
+}
+.item_menu:hover{
+    background-color: #13E0AB;
+}
+.item_menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+    width: 16rem;
+    padding: 15px 3%;
+}
+.item_menu a .txt_link{
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+}
+.item_menu a .icon{
+    font-size: 27px;
+    margin-left: 13px;
+}
+
+/* Histórico */
+.historico{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    width: 16rem;
+    padding-left: 3rem ;
+    transition: .5s;
+}
+.titulo_historico{
+    color: #f5f5f5;
+    margin-bottom: 0.3rem;
+}
+
+.divisao_lista_historico{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top:0.2rem;
+}
+.icones_item_lista{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+    position: relative;
+}
+.grafico_historico{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #c9c9c9;
+    padding: 0.5rem;
+    width: 80%;
+}
+.grafico_historico:hover{
+    background-color: #8a8a8a;
+    border-radius: 0.8rem;
+}
+.icones_item_lista i{
+    font-size: 0.8rem;
+    position: absolute;
+    left: 82%;
+}
+.icones_item_lista i:hover{
+    color: #d3d2d2;
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+/* Upgrade de plano*/
+.assinatura{
+    display: flex;
+    flex-direction: row;
+    width: 14rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #585858;
+    border-radius: 0.4rem;
+    gap: 1rem;
+    margin-bottom: 1.8rem;
+    transition: .5s;
+}
+.assinatura:hover
+{
+    cursor: pointer;
+}
+.campo_assinatura{
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.campo_assinatura:hover{
+    color: #cccaca;
+}
+.assinatura i{
+    font-size: 30px;
+    color: #fff;
+}
+.icon_historico:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+.setinha{
+    font-size: .8rem;
+    margin-left: .3rem;
+    transition: .5s;
+}
+.setamenu
+{
+    transform: translateY(1rem);
+    margin-bottom: -1.8rem;
+    margin-left: 16.1rem;
+    background-color: #13E0AB;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    padding-right: 1.5rem;
+    height: 1.8rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: .45s;
+}
+.setamenu:hover
+{
+    cursor: pointer;
+}
+.fechado
+{
+    width: 3.5rem;
+    transition: .5s;
+}
+.escondido1
+{
+    display: none;
+    pointer-events: none;
+    width: 2rem;
+    margin-bottom: -23rem;
+
+}
+.escondido_botao
+{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 4rem;
+    margin-left:6rem;
+    overflow: hidden;
+    height: 4rem;
+    margin-bottom: 1rem;
+    transition: .5s;
+
+}
+.fechado_assinatura
+{
+    border-right: solid 4px #13E0AB;
+    background-color: #404040;
+    width: 4rem;
+    border-radius: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: .5s;
+}
+.fechado_assinatura:hover
+{
+    background-color: #13E0AB;
+}
+.seta_fechada
+{
+    margin-left: 3.5rem;
+    transition: .5s;
+}
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost/Projeto2025/SimLab/Styles/menu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <?php include_once("/xampp/htdocs/Projeto2025/SimLab/Templetes/Modal/modal.php");?>
+
+    <div class="total fechado" id='totalmenu'>
+        <div class="setamenu seta_fechada">
+            <i class="bi bi-caret-right-fill setinha"></i>
+        </div>
+
+        <ul class="lista_">
+            <div class="campo_lista">
+
+                <div class="campo_item_lista">
+                    <li  id='botao' class="item_menu escondido_botao">
+                        <a id = "open_modal" href="#">
+                            <span class="icon">
+                                <i class="bi bi-file-earmark-check-fill"></i>
+                            </span>
+                            <span name='links' id='comparar' class="txt_link escondido1">Comparar</span>
+                        </a>
+                    </li>
+                </div>
+                            
+                <div class="historico escondido1">
+
+
+                    <div class="menu_historico">
+                        <p class="titulo_historico">Hoje</p>
+                        <ul class="lista_historico">
+                            <div class="divisao_lista_historico">
+                                <div class="icones_item_lista">
+                                    <a class="grafico_historico" href="#">Viremia Vacinal</a>
+                                    <i class="bi bi-trash3-fill icon_historico"></i>
+                                </div>
+                                <div class="icones_item_lista">
+                                    <a class="grafico_historico" href="#">Anticorpos teste unidade</a>
+                                    <i class="bi bi-trash3-fill icon_historico"></i>
+                                </div>
+                                <div class="icones_item_lista">
+                                    <a class="grafico_historico" href="#">Vacinação sarampo teste</a>
+                                    <i class="bi bi-trash3-fill icon_historico"></i>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+<!--
+                    <div class="menu_historico">
+                        <p class="titulo_historico">Ontem</p>
+                        <ul class="lista_historico">
+                            <div class="divisao_lista_historico">
+                                <div class="icones_item_lista">
+                                    <a class="grafico_historico" href="#">Gráfico 1</a>
+                                    <i class="bi bi-trash3-fill icon_historico"></i>
+                                </div>
+                                <div class="icones_item_lista">
+                                    <a class="grafico_historico" href="#">Gráfico 1</a>
+                                    <i class="bi bi-trash3-fill icon_historico"></i>
+                                </div>
+                                <div class="icones_item_lista">
+                                    <a class="grafico_historico" href="#">Gráfico 1</a>
+                                    <i class="bi bi-trash3-fill icon_historico"></i>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>-->
+
+                    <div class="menu_historico">
+                        <p class="titulo_historico">Semana passada</p>
+                        <ul class="lista_historico">
+                            <div class="divisao_lista_historico">
+                                <div class="icones_item_lista">
+                                    <a class="grafico_historico" href="#">Anticorpos 365 dias</a>
+                                    <i class="bi bi-trash3-fill icon_historico"></i>
+                                </div>
+                                <div class="icones_item_lista">
+                                    <a class="grafico_historico" href="#">iremia sarampo 30 dias</a>
+                                    <i class="bi bi-trash3-fill icon_historico"></i>
+                                </div>
+                                <div class="icones_item_lista">
+                                    <a class="grafico_historico" href="#">Teste cepa virus sarampo</a>
+                                    <i class="bi bi-trash3-fill icon_historico"></i>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+
+                    <div class="menu_historico">
+                        <p class="titulo_historico">Anteriores</p>
+                        <ul class="lista_historico">
+                            <div class="divisao_lista_historico">
+                                <div class="icones_item_lista">
+                                    <a class="grafico_historico" href="#">Evolução viremia</a>
+                                    <i class="bi bi-trash3-fill icon_historico"></i>
+                                </div>
+<!--
+                                <div class="icones_item_lista">
+                                    <a class="grafico_historico" href="#">Gráfico 1</a>
+                                    <i class="bi bi-trash3-fill icon_historico"></i>
+                                </div>
+
+                                <div class="icones_item_lista">
+                                    <a class="grafico_historico" href="#">Gráfico 1</a>
+                                    <i class="bi bi-trash3-fill icon_historico"></i>
+                                </div>-->
+                            </div>
+                        </ul>
+                    </div>
+                </div> 
+                <!-- Plano com assinatura --> 
+                <div class="assinatura fechado_assinatura" id = "open_modal1">
+                    <i class="bi bi-stars"></i>
+                    <a class="campo_assinatura escondido1">Fazer upgrade de plano</a>
+                </div>
+            </div>
+        </ul>
+<!--=================TELA DE UPGRADE==================-->
+        
+    </div>
+    <script src="/Projeto2025/SimLab/js/modal.js"></script>
+    <script src="/Projeto2025/SimLab/js/menu.js"></script>
+</body>
+</html>
+
+
+const openModal = document.getElementById("open_modal");
+const openModal1 = document.getElementById("open_modal1");
+const closeModal = document.getElementById("close_modal");
+const modal = document.querySelector("#modal");
+const fade = document.querySelector("#fade");
+ 
+const toggleModal = () => {
+	modal.classList.toggle("hide");
+	fade.classList.toggle("hide");
+};
+
+[openModal, openModal1, closeModal].forEach((el) => {
+	el.addEventListener("click", () => toggleModal());
+}); 
